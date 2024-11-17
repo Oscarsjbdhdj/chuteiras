@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Carros</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/css2.css">
+</head>
+<body>
+    <header>
+        <img src="assets/img/logo.webp" alt="Logo"  style="width: 50px; height: 50px;">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#product">produtos</a></li>
+                <li><a href="#principal">limitados</a></li>
+                <li><a href="#contato">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home">
+        <div class="home-container">
+            <div class="home-image">
+                <img src="assets/img/messi.jpg" alt="Loja de Chuteiras" />
+            </div>
+            <div class="home-description">
+                <h1>Bem-vindo à Loja de Chuteiras</h1>
+                <p>
+                    Descubra a maior variedade de chuteiras para todos os estilos e
+                    níveis de jogo. Nossa loja oferece produtos de alta qualidade, 
+                    design inovador e conforto para melhorar sua performance em campo.
+                </p>
+                <p>
+                    Trabalhamos com as principais marcas do mercado e garantimos 
+                    os melhores preços. Seja um craque no gramado com chuteiras 
+                    que se destacam pelo desempenho e estilo!
+                </p>
+                <button onclick="window.location.href='#product';">Confira Nossos Produtos</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="product">
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assets/img/04-Photoroom.png" alt="Chuteira Preta" onclick="expandImage(this)">
+                <p class="description">Chuteira preta, estilo clássico com design elegante para desempenho e estilo.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/05-Photoroom.png" alt="Chuteira Rosa" onclick="expandImage(this)">
+                <p class="description">Chuteira rosa vibrante, ideal para quem quer destacar-se em campo.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/img/06.1-Photoroom.png" alt="Chuteira Bege" onclick="expandImage(this)">
+                <p class="description">Chuteira bege com toque minimalista, perfeita para qualquer ocasião esportiva.</p>
+            </div>
+        </div>
+    
+        <!-- Modal para exibição da imagem expandida -->
+        <div id="imageModal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="expandedImg">
+        </div>
+    </section>
+    
+    
+    <!-- https://www.alainclass.com/cars/ -->
+    <section class="container" id="principal">
+        <div class="list">
+            <div class="item active itemAnime">
+                <div class="car-img">
+                    <img src="assets/img/01-Photoroom.png" alt="chuteira preta e roxa" style="width: auto; height: 425px;">
+                </div>
+                <div class="content">
+                    <p class="car-information">Lançamento</p>
+                    <h2>Chuteira Preta e Roxa</h2>
+                    <p class="description">Chuteira de alta performance nas cores preta e roxa. Ideal para jogadores que buscam estilo e conforto no campo.</p>
+                    <button class="button1" onclick="window.location.href='#contato';">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/03-Photoroom.png" alt="chuteira vermelha" style="width: 350px; height: auto;">
+                </div>
+                <div class="content">
+                    <p class="car-information">Edição Limitada</p>
+                    <h2>Chuteira Vermelha</h2>
+                    <p class="description">Chuteira exclusiva na cor vermelha, projetada para máxima performance e estilo. Uma escolha para os jogadores mais exigentes.</p>
+                    <button class="button1" onclick="window.location.href='#contato';">Saiba Mais</button>
+                </div>
+            </div>
+            <div class="item">
+                <div class="car-img">
+                    <img src="assets/img/02-Photoroom.png" alt="chuteira azul" style="width: 400px; height: auto;">
+                </div>
+                <div class="content">
+                    <p class="car-information">Edição Limitada</p>
+                    <h2>Chuteira Azul</h2>
+                    <p class="description">Chuteira azul de edição limitada, com design inovador e excelente aderência. Perfeita para atletas que buscam o melhor desempenho.</p>
+                    <button class="button1" onclick="window.location.href='#contato';">Saiba Mais</button>
+                </div>
+            </div>
+        </div>
+        <div class="arrows">
+            <button id="prev" class="button">←</button>
+            <button id="next" class="button">→</button>
+        </div>
+        <div class="indicators">
+            <div class="number">01</div>
+            <ul>
+                <li class="active"></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </section>
+    
+    
+    
+    <section id="contato">
+        <div class="main-content intro-content">
+          <div class="intro-text-content">
+            <h2>nos mande uma mensagem</h2>
+            
+          </div>
+          <div class="intro-img">
+           
+          </div>
+          <div class="contact-form">
+            <form id="form">
+            <fieldset class="form-grid">
+             
+    
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" name="name" id="first-name" placeholder="Your first name">
+              </div>
+    
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" name="last-name" id="last-name" placeholder="Your last name">
+              </div>
+    
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="text" name="email" id="email" placeholder="Your e-mail">
+              </div>
+    
+              <div class="form-group full-width">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="10" placeholder="Your message"></textarea>
+              </div>
+    
+              <div class="form-group full-width">
+                <button type="submit">Send message</button>
+              </div>
+            </fieldset>
+        </form>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+            <script type="text/javascript">
+                (function () {
+                    emailjs.init("SIEYEuYZOXpU_Jbvw");
+                })();
+            </script>
+            <script>
+                document.getElementById('form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    emailjs.sendForm('service_wnh7foq', 'template_uz8pdyw', this)
+                        .then(function () {
+                            alert('Email enviado com sucesso!');
+                        }, function (error) {
+                            alert('Erro ao enviar o email: ' + JSON.stringify(error));
+                        });
+                });
+            </script>
+        </div>
+      </section>
+    <script src="assets/js/script.js"></script>
+
+    <footer id="custom-footer">
+        <div class="social-links-container">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="assets/img/instagram.jpg" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="assets/img/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.tiktok.com" target="_blank">
+                <img src="assets/img/tik tok.jpg" alt="TikTok" class="social-icon">
+            </a>
+        </div>
+        <p class="footer-info">© 2024 Chuteiras Store. Sua melhor escolha para futebol!</p>
+    </footer>
+    
+</body>
+
+</html>

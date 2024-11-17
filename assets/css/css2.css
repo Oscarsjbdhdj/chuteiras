@@ -1,0 +1,371 @@
+/* Estilo para a barra de navegação */
+header {
+    background: linear-gradient(90deg, #000000, #4B0082); /* Gradiente de preto para roxo */
+    padding: 10px 0; /* Ajusta o padding da barra de navegação */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 20px 20px; /* Bordas inferiores arredondadas */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo para a logo */
+/* Estilo para a logo */
+.logo {
+    width: 40px !important; /* Define a largura da logo */
+    height: 40px !important; /* Define a altura da logo */
+    border-radius: 20% !important; /* Arredonda as bordas */
+    object-fit: cover !important; /* Garante que a imagem preencha o espaço */
+    object-position: center !important; /* Centraliza a imagem */
+    margin-left: 70px; /* Afasta a logo um pouco do canto esquerdo */
+}
+
+
+/* Estilo para os itens de navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Espaçamento entre os itens */
+    margin: 0;
+    padding: 0 30px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #fff; /* Texto branco */
+    font-size: 1rem; /* Tamanho de fonte */
+    padding: 10px 20px; /* Mais espaçamento nas laterais */
+    border-radius: 30px; /* Bordas mais arredondadas */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+/* Efeito de hover - Muda a cor das letras para roxo */
+nav ul li a:hover {
+    color: #000000; /* Cor roxa ao passar o mouse */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo para a seção de contato */
+#contact {
+    background-color: #f4f4f9; /* Cor de fundo suave */
+    padding: 60px 20px; /* Espaçamento interno */
+    text-align: center;
+}
+
+/* Estilo para o conteúdo principal */
+.main-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Título da seção */
+#contact h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Estilo para a área de imagem */
+.intro-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 30px 0;
+}
+
+/* Estilo para o formulário */
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o grid do formulário */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Estilo para cada grupo do formulário */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo para labels */
+.form-group label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Estilo para os campos de entrada (input e textarea) */
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+}
+
+/* Foco nos campos de entrada */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4B0082; /* Cor roxa no foco */
+    outline: none;
+}
+
+/* Estilo para o botão de envio */
+.form-group button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #4B0082; /* Cor roxa */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito de hover no botão de envio */
+.form-group button:hover {
+    background-color: #6a1b9a; /* Cor roxa mais escura ao passar o mouse */
+}
+
+/* Estilo para campos de largura total */
+.form-group.full-width {
+    grid-column: span 2;
+}
+
+/* Responsividade: em telas pequenas, o formulário fica em uma coluna */
+/* Estilo para a seção de contato */
+/* Estilo para a seção de contato */
+#contact {
+    background-color: #2C3E50 !important; /* Novo valor para a cor de fundo (exemplo: azul escuro) */
+    padding: 60px 20px; /* Espaçamento interno */
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Estilização geral da seção */
+#home {
+    background: linear-gradient(135deg, #000000, #ff69b4); /* Fundo gradiente de preto para rosa */
+    padding: 50px 20px;
+    color: #fff; /* Cor do texto */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal da seção */
+.home-container {
+    display: flex;
+    flex-direction: row; /* Alinha imagem e descrição horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 25px; /* Espaçamento entre a imagem e a descrição */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilização da imagem */
+.home-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Sombra na imagem */
+}
+
+/* Estilização da descrição */
+.home-description {
+    max-width: 600px;
+    text-align: left; /* Texto alinhado à esquerda */
+}
+
+.home-description h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.home-description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.home-description button {
+    background-color: #fff; /* Botão com fundo branco */
+    color: #ff69b4; /* Texto rosa */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-description button:hover {
+    background-color: #ff69b4;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/* Estilo geral da seção */
+/* Estilo geral da seção com fundo roxo e rosa */
+#product {
+    padding: 250px 100px; /* Espaçamento interno */
+    background: linear-gradient(135deg, #ff00ff, #964e72); /* Gradiente de roxo para rosa */
+    color: #fff; /* Texto branco para contraste */
+}
+
+/* Estilo da galeria */
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 100px; /* Aumenta o espaçamento entre as imagens */
+    flex-wrap: wrap;
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-item {
+    width: 300px; /* Define uma largura fixa para cada item */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item .description {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #fff; /* Texto branco */
+}
+
+/* Estilo do modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #ff69b4;
+}
+
+
+
+
+
+
+
+
+
+#custom-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000000; /* Preto */
+    color: #f4a6d7; /* Rosa Inter Miami */
+    padding: 10px 0; /* Diminui o padding para reduzir a altura */
+    text-align: center;
+    z-index: 1000;
+}
+
+.social-links-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Diminui o espaçamento entre os ícones */
+    margin-bottom: 5px; /* Menor espaço abaixo dos ícones */
+}
+
+.social-icon {
+    width: 25px; /* Diminui o tamanho dos ícones */
+    height: 25px; /* Diminui o tamanho dos ícones */
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.footer-info {
+    font-size: 0.8rem; /* Diminui o tamanho do texto */
+    margin: 0;
+}
